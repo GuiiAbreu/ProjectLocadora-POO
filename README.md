@@ -5,7 +5,7 @@ A interface gráfica é construída com o framework Swing, e a persistência de 
 
 O sistema consiste em três principais classes: Filme, Cliente e Item, que são gerenciadas de acordo com os princípios do MVC para proporcionar uma estrutura organizada e modular.
 
-O projeto permitiu aplicar os conceitos de POO, disciplina ministrada pelo Prof. Me. Paulo Freitas. Além disso, a modularidade do projeto permite que você separe as diferentes funcionalidades em classes distintas, facilitando a manutenção e a escalabilidade do sistema.
+O projeto permitiu aplicar os conceitos de POO, estudados na disciplina ministrada pelo Prof. Me. Paulo Freitas no curso de Análise e Desenvolvimento de Sistemas do IFPB Campus Cajazeiras. Além disso, a modularidade do projeto permite que você separe as diferentes funcionalidades em classes distintas, facilitando a manutenção e a escalabilidade do sistema.
 
 ## Funcionalidades
 O sistema da Locadora de Filmes possui as seguintes funcionalidades principais:
