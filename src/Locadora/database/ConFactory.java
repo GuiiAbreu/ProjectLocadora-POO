@@ -20,17 +20,19 @@ public class ConFactory {
 
     public Connection getConnection() throws SQLException, ClassNotFoundException{
         Connection conn = null;
-        
-        try {
-            Class.forName("org.postgresql.Driver");
-        } catch (ClassNotFoundException e){
-            e.printStackTrace();
-        }
-        try {
-            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Locadora?useSSL=false", "postgres", "senhaSQL");
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
+                try {
+                        Class.forName("org.postgresql.Driver");
+                        Properties props = new Properties();
+                        String url = props.getProperty("url");
+		        String user = props.getProperty("user");
+		        String password = props.getProperty("password");
+                        conn = DriverManager.getConnection(url,user,password);
+                } catch (IOException ex) {
+			ex.printStackTrace();
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+		}
         return conn;
     }
 }
